@@ -1,1 +1,212 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mandy Hartman | Frontend Engineer</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        color: #1a1a1a;
+        max-width: 1200px;
+        margin: auto;
+        padding: 2rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin: 1rem 0 0.5rem;
+      }
+
+      .subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      @media (min-width: 600px) {
+        .profile {
+          flex-direction: row;
+          text-align: left;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+
+      .profile img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .contact-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      @media (min-width: 768px) {
+        .contact-icons {
+          justify-content: flex-start;
+        }
+      }
+
+      .contact-icons a {
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+      }
+
+      .contact-icons img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        display: block;
+      }
+
+      .blurb {
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        padding: 2rem 0;
+        font-size: 1.25rem;
+        line-height: 1.6;
+      }
+
+      .projects-header {
+        font-size: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .project {
+        border: 1px solid #ccc;
+        padding: 1.5rem;
+        border-radius: 12px;
+      }
+
+      .project h3 {
+        margin-top: 0;
+      }
+
+      .project a {
+        color: #0066cc;
+        font-weight: 500;
+        text-decoration: none;
+      }
+
+      .project a:hover {
+        text-decoration: underline;
+      }
+
+      .more-link {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 2rem;
+        font-size: 1.1rem;
+        color: #000;
+        text-decoration: none;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="profile">
+      <img src="mandy.jpeg" alt="Mandy Hartman" />
+      <div>
+        <h1>Mandy Hartman</h1>
+        <p class="subtitle">
+          Frontend Engineer | Building interfaces with precision and creativity.
+        </p>
+        <div class="contact-icons">
+          <a href="https://github.com/hartmandy" aria-label="GitHub">
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg"
+              alt="GitHub"
+            />
+          </a>
+          <a href="https://twitter.com/codewithmandy" aria-label="Twitter">
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/twitter.svg"
+              alt="Twitter"
+            />
+          </a>
+          <a href="https://linkedin.com/in/codewithmandy" aria-label="LinkedIn">
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg"
+              alt="LinkedIn"
+            />
+          </a>
+          <a href="mailto:mandyhartmandev@gmail.com" aria-label="Email">
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/gmail.svg"
+              alt="Email"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="blurb">
+      <p>
+        I specialize in frontend development, with a focus on building
+        user-friendly, accessible, and performant web applications. I work in
+        React (Next JS, Remix/ React Router), Typescript, and React Native.
+      </p>
+    </div>
+
+    <h2 class="projects-header">What I've been working on lately</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Sport Card Investor Mobile App</h3>
+        <p>
+          Rebuilding the new Sport Card Investor mobile app with React Native.
+        </p>
+        <a
+          href="https://apps.apple.com/us/app/sports-card-investor/id1533690124"
+          >Download the App -></a
+        >
+      </div>
+      <div class="project">
+        <h3>Market Movers Web App</h3>
+        <p>
+          Track your sports card or TCG collection and see how they're
+          performing in the market. Built with Next JS.
+        </p>
+        <a href="https://www.marketmoversapp.com/">Build Your Collection -></a>
+      </div>
+      <div class="project">
+        <h3>Black Mountain College Yearbook</h3>
+        <p>
+          Descover BMC histories with this digital archive. Built with Remix and
+          Sanity.
+        </p>
+        <a href="https://bmcyearbook.org">View the archive -></a>
+      </div>
+    </div>
+
+    </div>
+    <a class="more-link" href="https://github.com/hartmandy"> View More → </a>
+  </body>
+</html>
